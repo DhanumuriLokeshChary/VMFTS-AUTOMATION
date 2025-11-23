@@ -11,6 +11,10 @@ class FundPage extends BasePage{
         this.FundData = FundData;
     }
 
+    async fundCreatebyStateMaker(){
+        
+    }
+
     async clickFund(){
         await this.page.getByText('Fund', { exact: true }).click();
     }
@@ -19,4 +23,4 @@ class FundPage extends BasePage{
     }
 
 }
-module.exports = FundPage;
+module.exports = {FundPage};

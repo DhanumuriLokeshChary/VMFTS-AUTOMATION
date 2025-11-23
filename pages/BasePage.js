@@ -5,7 +5,7 @@ export class BasePage {
     this.page = page;
 
     // Fixed browser size nuvvu adigina exact
-    this.page.setViewportSize({ width: 950, height: 580 });
+    this.page.setViewportSize({ width: 1000, height: 580 });
 
     // Slow motion 500ms (super useful learning ki & debugging ki)
     this.page.slowMo = 5000;

@@ -1,10 +1,12 @@
-const { test, expect } = require('@playwright/test');
-const { LoginPage,FundPage } = require('../pages');
+const { test } = require('@playwright/test');
+const { FundPage} = require('../pages/FundPage');
+const {LoginPage} = require('../pages/LoginPage');
+
 
 test('Fund Create',async ({page})=>{
     const login = new LoginPage(page);
     await login.goto();
-    await  login.login(); 
+    await  login.statemakerlogin(); 
     
     const fund = new FundPage(page);
     await fund.clickFund();
